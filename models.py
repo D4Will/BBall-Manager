@@ -1,8 +1,10 @@
+import os
 from flask_sqlalchemy import SQLAlchemy
 
 # These are variables used to connect flask application to local database.
-database_name = 'bball_manager'
-database_path = 'postgresql://{}:{}@{}/{}'.format('postgres', 'abc', 'localhost:5432', database_name)
+# database_name = 'bball_manager'
+# database_path = 'postgresql://{}:{}@{}/{}'.format('postgres', 'abc', 'localhost:5432', database_name)
+database_path = os.environ['DATABASE_URL']
 
 db = SQLAlchemy()
 
