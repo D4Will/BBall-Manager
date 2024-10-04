@@ -3,7 +3,7 @@ export AUTH0_DOMAIN='dev-q0a82rcllecl1af5.us.auth0.com'
 export ALGORITHMS=['RS256']
 export API_AUDIENCE='bball'
 
-export DATABASE_URL='postgres://u24qutg0gqkcf0:p69fe239218978e53a053e0cc93bde03750cd672361b7a194b6d48cb3c5490dca@c9pv5s2sq0i76o.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d306p2ipbpbmg'
+export DATABASE_URL='postgresql://bball_manager_deployment_user:5HwtjKMaOzsuoLDnvMpPXkEr60E6UNNd@dpg-cs05c9i3esus738t2b2g-a/bball_manager_deployment'
 export FLASK_APP=app.py
 export FLASK_DEBUG=True
 
