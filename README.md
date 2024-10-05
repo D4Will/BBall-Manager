@@ -5,7 +5,7 @@ Manage teams of basketball players and list details about players.
 This API allows for the making of custom basketball teams with custom players. This api could be used as part of fantasy sports leagues or managing teams for local basketball leagues.
 
 ### Hosted URL
-The hosted api can be accessed through `https://bball-manager.onrender.com` from Render. Look below for authorization tokens.
+The hosted api can be accessed through `https://bball-manager.onrender.com` from Render. Look below for authorization tokens. Hosted API can be easily accessed by importing the Postman collection which has the Bearer tokens set up for authentication.
 ### Project dependencies and platforms
 * Flask - A backend microservices framework
 * SQLAlchemy - A Python SQL toolkit
