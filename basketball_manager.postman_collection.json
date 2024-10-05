@@ -1,0 +1,1138 @@
+{
+	"info": {
+		"_postman_id": "f116e635-9bb6-411e-858a-3294ba536349",
+		"name": "basketball_manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38010860"
+	},
+	"item": [
+		{
+			"name": "Analyst",
+			"item": [
+				{
+					"name": "/teams",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/players",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/teams/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/players/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nuggets\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/teams",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Larry Bird\",\r\n    \"height\": \"6'9\",\r\n    \"position\": \"Small Forward\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/players",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Miami Heat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/teams/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"team_id\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/players/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/teams/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/players/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImY1RThjQmNUNlh0Q1VsYWdQQVQ1SiJ9.eyJpc3MiOiJodHRwczovL2Rldi1xMGE4MnJjbGxlY2wxYWY1LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJxMFplMm9OeDNnWDFIVzI3VmxSVHhIOWNXR1B5aHlJNEBjbGllbnRzIiwiYXVkIjoiYmJhbGwiLCJpYXQiOjE3MjgwNzY0MTYsImV4cCI6MTcyODQyMjAxNiwic2NvcGUiOiJnZXQ6dGVhbXMgZ2V0OnBsYXllcnMgZ2V0OnRlYW1zL2lkIGdldDpwbGF5ZXJzL2lkIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwiYXpwIjoicTBaZTJvTngzZ1gxSFcyN1ZsUlR4SDljV0dQeWh5STQiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6dGVhbXMiLCJnZXQ6cGxheWVycyIsImdldDp0ZWFtcy9pZCIsImdldDpwbGF5ZXJzL2lkIl19.HX_4jb5Oz25CFt8zBroKOqbXoTQivFLix8syRFAW2gow-7BAKgXRyNcfohFh0sU-UWKZ1mIfNF07vIIr2F9TZHwR5El9LapCRx_zUNihCKWjPtY8xHpvo8UAJkJBSlaDKEVyd8aM199yeVZPfBnB70fOKRHQylxW55Udz5dQ0VILIMneeVvUznHS_Rym7zOW2z1Q93TGOw7CL25h48rLuys2wu7H_lpAl9zulJu7wrPDYpJJk3hyIsPMkW_n9SYo4xJzTQbK6EtCszVTMCZSxXt4CxpDfacnh1QCgd15kNCoO-YgeFjgcjjV5Ul98157nLvPLAgZGVFwFDTAbD27cw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Administrator",
+			"item": [
+				{
+					"name": "/teams",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/players",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/teams/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/players/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nuggets\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/teams",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Larry Bird\",\r\n    \"height\": \"6'9\",\r\n    \"position\": \"Small Forward\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/players",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Miami Heat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/teams/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"team_id\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/players/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/teams/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/players/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImY1RThjQmNUNlh0Q1VsYWdQQVQ1SiJ9.eyJpc3MiOiJodHRwczovL2Rldi1xMGE4MnJjbGxlY2wxYWY1LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJxMFplMm9OeDNnWDFIVzI3VmxSVHhIOWNXR1B5aHlJNEBjbGllbnRzIiwiYXVkIjoiYmJhbGwiLCJpYXQiOjE3MjgwNzY0ODksImV4cCI6MTcyODQyMjA4OSwic2NvcGUiOiJnZXQ6dGVhbXMgZ2V0OnBsYXllcnMgcG9zdDp0ZWFtcyBwb3N0OnBsYXllcnMgcGF0Y2g6dGVhbXMgcGF0Y2g6cGxheWVycyBkZWxldGU6dGVhbXMgZGVsZXRlOnBsYXllcnMgZ2V0OnRlYW1zL2lkIGdldDpwbGF5ZXJzL2lkIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwiYXpwIjoicTBaZTJvTngzZ1gxSFcyN1ZsUlR4SDljV0dQeWh5STQiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6dGVhbXMiLCJnZXQ6cGxheWVycyIsInBvc3Q6dGVhbXMiLCJwb3N0OnBsYXllcnMiLCJwYXRjaDp0ZWFtcyIsInBhdGNoOnBsYXllcnMiLCJkZWxldGU6dGVhbXMiLCJkZWxldGU6cGxheWVycyIsImdldDp0ZWFtcy9pZCIsImdldDpwbGF5ZXJzL2lkIl19.lXCAUKEaSn_QWz7982EMnw6CFVFOILYZ5R7b5_b9IRgzMLta1tlee8M4D9EA2TJS5xCgB7VD7dLavo8fgFjTaYrKzTSHRZ6pIC4gaXOP1LnIh_JeZ0jSR8oAB0wXYAM57_iZvL-TP4LNdK4IBqT7pZp2ulVX2r2O7gIw9w01bMGTJsqXt6Kt6uYHiw_XlJvwyHJa1mA71_Vuwb8VLryvR5ES2g6r5j_aRhqHOB4xtPoj_bePFgVp4YBGEt_XLOmVFDllLP2E6vqglixuQgVQE8phW47XIL0GzQUBxl7U0Kj4k6VsxU-m4cil8x0gnEn4Wy_1ptA97PKDgTX3mSWrfw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Administrator-Hosted API",
+			"item": [
+				{
+					"name": "/teams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nuggets\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Larry Bird\",\r\n    \"height\": \"6'9\",\r\n    \"position\": \"Small Forward\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Miami Heat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"team_id\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players/3",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImY1RThjQmNUNlh0Q1VsYWdQQVQ1SiJ9.eyJpc3MiOiJodHRwczovL2Rldi1xMGE4MnJjbGxlY2wxYWY1LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJxMFplMm9OeDNnWDFIVzI3VmxSVHhIOWNXR1B5aHlJNEBjbGllbnRzIiwiYXVkIjoiYmJhbGwiLCJpYXQiOjE3MjgwNzY0ODksImV4cCI6MTcyODQyMjA4OSwic2NvcGUiOiJnZXQ6dGVhbXMgZ2V0OnBsYXllcnMgcG9zdDp0ZWFtcyBwb3N0OnBsYXllcnMgcGF0Y2g6dGVhbXMgcGF0Y2g6cGxheWVycyBkZWxldGU6dGVhbXMgZGVsZXRlOnBsYXllcnMgZ2V0OnRlYW1zL2lkIGdldDpwbGF5ZXJzL2lkIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwiYXpwIjoicTBaZTJvTngzZ1gxSFcyN1ZsUlR4SDljV0dQeWh5STQiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6dGVhbXMiLCJnZXQ6cGxheWVycyIsInBvc3Q6dGVhbXMiLCJwb3N0OnBsYXllcnMiLCJwYXRjaDp0ZWFtcyIsInBhdGNoOnBsYXllcnMiLCJkZWxldGU6dGVhbXMiLCJkZWxldGU6cGxheWVycyIsImdldDp0ZWFtcy9pZCIsImdldDpwbGF5ZXJzL2lkIl19.lXCAUKEaSn_QWz7982EMnw6CFVFOILYZ5R7b5_b9IRgzMLta1tlee8M4D9EA2TJS5xCgB7VD7dLavo8fgFjTaYrKzTSHRZ6pIC4gaXOP1LnIh_JeZ0jSR8oAB0wXYAM57_iZvL-TP4LNdK4IBqT7pZp2ulVX2r2O7gIw9w01bMGTJsqXt6Kt6uYHiw_XlJvwyHJa1mA71_Vuwb8VLryvR5ES2g6r5j_aRhqHOB4xtPoj_bePFgVp4YBGEt_XLOmVFDllLP2E6vqglixuQgVQE8phW47XIL0GzQUBxl7U0Kj4k6VsxU-m4cil8x0gnEn4Wy_1ptA97PKDgTX3mSWrfw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Analyst-Hosted API",
+			"item": [
+				{
+					"name": "/teams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nuggets\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Larry Bird\",\r\n    \"height\": \"6'9\",\r\n    \"position\": \"Small Forward\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Miami Heat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"team_id\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players/3",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/teams",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/teams/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"teams",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://bball-manager.onrender.com/players/1",
+							"protocol": "https",
+							"host": [
+								"bball-manager",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"players",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImY1RThjQmNUNlh0Q1VsYWdQQVQ1SiJ9.eyJpc3MiOiJodHRwczovL2Rldi1xMGE4MnJjbGxlY2wxYWY1LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJxMFplMm9OeDNnWDFIVzI3VmxSVHhIOWNXR1B5aHlJNEBjbGllbnRzIiwiYXVkIjoiYmJhbGwiLCJpYXQiOjE3MjgwNzY0MTYsImV4cCI6MTcyODQyMjAxNiwic2NvcGUiOiJnZXQ6dGVhbXMgZ2V0OnBsYXllcnMgZ2V0OnRlYW1zL2lkIGdldDpwbGF5ZXJzL2lkIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwiYXpwIjoicTBaZTJvTngzZ1gxSFcyN1ZsUlR4SDljV0dQeWh5STQiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6dGVhbXMiLCJnZXQ6cGxheWVycyIsImdldDp0ZWFtcy9pZCIsImdldDpwbGF5ZXJzL2lkIl19.HX_4jb5Oz25CFt8zBroKOqbXoTQivFLix8syRFAW2gow-7BAKgXRyNcfohFh0sU-UWKZ1mIfNF07vIIr2F9TZHwR5El9LapCRx_zUNihCKWjPtY8xHpvo8UAJkJBSlaDKEVyd8aM199yeVZPfBnB70fOKRHQylxW55Udz5dQ0VILIMneeVvUznHS_Rym7zOW2z1Q93TGOw7CL25h48rLuys2wu7H_lpAl9zulJu7wrPDYpJJk3hyIsPMkW_n9SYo4xJzTQbK6EtCszVTMCZSxXt4CxpDfacnh1QCgd15kNCoO-YgeFjgcjjV5Ul98157nLvPLAgZGVFwFDTAbD27cw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
