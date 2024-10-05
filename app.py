@@ -249,6 +249,14 @@ def create_app(test_config=None):
         "message": "not_found"
     }), 404
 
+    @app.errorhandler(405)
+    def bad_method(error):
+        return jsonify({
+        "success": False,
+        "error": 405,
+        "message": "bad_method"
+    }), 405
+
     @app.errorhandler(AuthError)
     def auth_error(error):
         return jsonify({
