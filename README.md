@@ -335,6 +335,7 @@ Handled errors are:
 * 401: Unauthorized
 * 403: Forbidden
 * 404: Resource Not Found
+* 405: Method Not Allowed
 * 422: Not Processable
 
 Errors are returned as JSON objects. The code below shows a sample 404 error.
